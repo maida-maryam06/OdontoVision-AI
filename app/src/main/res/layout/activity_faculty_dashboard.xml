@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123943">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faculty Mode"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload oral pathology learning material, generate quizzes, and review student performance."
+            android:textColor="#E0E0E0"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUploadPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Oral Pathology PDF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGenerateQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Odontogenic Pathology Quiz"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuizSolutions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Quiz Solutions"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStudentReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Performance Report"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuizHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Quiz History"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

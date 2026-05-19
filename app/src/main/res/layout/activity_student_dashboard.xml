@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123943">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Mode"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prepare, practice, ask questions, and review your odontogenic oral pathology performance."
+            android:textColor="#E0E0E0"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReadNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Read Oral Pathology Notes"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAskTutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ask OdontoPath AI Tutor"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSampleQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Sample Quiz"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnARLearning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AR/3D Learning Module"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStudentPerformance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Result / My Performance"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Madproj">
+        <activity
+            android:name="com.nmims.madproj.activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nmims.madproj.activities.LoginActivity"
+            android:exported="false" />
+        <activity android:name="com.nmims.madproj.activities.QuizSelectionActivity" />
+        <activity android:name="com.nmims.madproj.activities.QuizActivity" />
+        <activity android:name="com.nmims.madproj.activities.UploadNoteActivity" />
+        <activity android:name="com.nmims.madproj.activities.ResultActivity" />
+        <activity android:name="com.nmims.madproj.activities.StatsActivity" />
+        <activity android:name="com.nmims.madproj.activities.RegisterActivity" />
+        <activity android:name="com.nmims.madproj.activities.ChatbotActivity" />
+        <activity android:name=".activities.StudentDashboardActivity" />
+        <activity android:name=".activities.FacultyDashboardActivity" />
+        <activity android:name=".activities.ARLearningActivity" />
+        <activity android:name=".activities.OralPathologyNotesActivity" />
+        <activity android:name=".activities.GenerateQuizActivity" />
+        <activity android:name=".activities.QuizSolutionUploadActivity" />
+        <activity android:name=".activities.AR3DDetailActivity" />
+        <activity android:name=".activities.ModelViewerActivity" />
+        
+    </application>
+
+</manifest>

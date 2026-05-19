@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#123943">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Quiz Solution Upload"
+            app:titleTextColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faculty Mode"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload quiz solution PDFs or answer keys. Students will be able to view these solutions after attempting quizzes."
+            android:textColor="#E0E0E0"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUploadSolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Quiz Solution PDF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="18dp"
+            app:cornerRadius="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uploaded Quiz Solutions"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvEmptySolutionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No quiz solution PDFs uploaded yet."
+            android:textColor="#E0E0E0"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="14dp"
+            android:background="#22000000" />
+
+        <LinearLayout
+            android:id="@+id/solutionListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

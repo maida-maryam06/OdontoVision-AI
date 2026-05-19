@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        app:title="Student Performance Report"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faculty Performance Dashboard"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a student to view individual quiz performance, weak areas, and attempt history."
+                android:textColor="#E0E0E0"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Student"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/studentListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvSelectedStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Student: None"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:background="#22000000"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvTotalAttempts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Attempts: 0"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:background="#22000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvAverageScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average Score: 0%"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:background="#22000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvHighestScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Highest Score: 0%"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:background="#22000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvLowestScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lowest Score: 0%"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:background="#22000000"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvFacultyInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faculty Interpretation: No student selected."
+                android:textColor="#E0E0E0"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"
+                android:padding="14dp"
+                android:background="#22000000"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Student Quiz Attempts"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
