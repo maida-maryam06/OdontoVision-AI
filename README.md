@@ -1,4 +1,4 @@
-# odontopathAI - AI-Powered tutor Application
+# OdontovISION-AI - AI-Powered tutor Application
 
 An Android quiz application with AI-powered question generation from notes, PDFs, and images.
 
