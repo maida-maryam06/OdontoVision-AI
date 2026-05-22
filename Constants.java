@@ -8,10 +8,10 @@ package com.nmims.madproj.utils;
 public final class Constants {
     private Constants() {}
 
-    public static final String BASE_API_URL = "https://generativelanguage.googleapis.com/v1beta/";
+    public static final String BASE_API_URL = "PUT_HERE";
 
     // IMPORTANT: Add your Gemini API Key here
-    public static String GEMINI_API_KEY = "AIzaSyB5eIEIww1N7O4jvqK-sgWddJ6qf-y-Afs";
+    public static String GEMINI_API_KEY = "YOUR_KEY";
 
     public static final String CATEGORY_JAVA = "Java";
     public static final String CATEGORY_ANDROID = "Android";
